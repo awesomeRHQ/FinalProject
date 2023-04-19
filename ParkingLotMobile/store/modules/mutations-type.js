@@ -1,0 +1,5 @@
+export const CUSTOMER_LOGIN = 'CUSTOMER_LOGIN'
+export const INIT_USER = 'INIT_USER'
+export const OUT_LOGIN = 'OUT_LOGIN'
+export const CUSTOMER_PARKING_PLACE = 'CUSTOMER_PARKING_PLACE'
+export const CAR_BOOKING = 'CAR_BOOKING'

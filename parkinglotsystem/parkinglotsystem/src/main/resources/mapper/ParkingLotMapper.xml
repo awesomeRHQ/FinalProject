@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rhq.parkinglotsystem.mapper.ParkingLotMapper">
+
+    <resultMap id="BaseResultMap" type="com.rhq.parkinglotsystem.modle.ParkingLot">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="plId" column="plId" jdbcType="VARCHAR"/>
+            <result property="plName" column="plName" jdbcType="VARCHAR"/>
+            <result property="plLatitude" column="plLatitude" jdbcType="DOUBLE"/>
+            <result property="plLongitude" column="plLongitude" jdbcType="DOUBLE"/>
+            <result property="isFull" column="isFull" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,plId,plName,
+        plLatitude,plLongitude,isFull,createTime,
+        updateTime,isDelete
+    </sql>
+</mapper>

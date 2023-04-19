@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rhq.parkinglotsystem.mapper.CarMapper">
+
+    <resultMap id="BaseResultMap" type="com.rhq.parkinglotsystem.modle.Car">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="carId" column="carId" jdbcType="VARCHAR"/>
+            <result property="isBooking" column="isBooking" jdbcType="INTEGER"/>
+            <result property="deadline" column="deadLine" jdbcType="TIMESTAMP"/>
+            <result property="enterTime" column="enterTime" jdbcType="TIMESTAMP"/>
+            <result property="leaveTime" column="leaveTime" jdbcType="TIMESTAMP"/>
+            <result property="cost" column="cost" jdbcType="INTEGER"/>
+            <result property="parkTime" column="cost" jdbcType="FLOAT"/>
+            <result property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+            <result property="openId" column="openId" jdbcType="VARCHAR"/>
+            <result property="parkingPlaceId" column="parkingPlaceId" jdbcType="VARCHAR"/>
+            <result property="cardId" column="cardId" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,carId,isBooking,deadline,enterTime,
+        leaveTime,cost,parkTime,isDelete,
+        openId,parkingPlaceId,cardId
+    </sql>
+</mapper>

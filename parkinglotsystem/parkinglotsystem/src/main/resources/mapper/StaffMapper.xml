@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rhq.parkinglotsystem.mapper.StaffMapper">
+
+    <resultMap id="BaseResultMap" type="com.rhq.parkinglotsystem.modle.Staff">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="staffId" column="staffId" jdbcType="VARCHAR"/>
+            <result property="staffName" column="staffName" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="VARCHAR"/>
+            <result property="idCard" column="idCard" jdbcType="VARCHAR"/>
+            <result property="photo" column="photo" jdbcType="VARCHAR"/>
+            <result property="post" column="post" jdbcType="VARCHAR"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,staffId,staffName,
+        gender,age,idCard,
+        photo,post,updateTime,isDelete,
+        createTime
+    </sql>
+</mapper>
